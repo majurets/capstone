@@ -1,0 +1,236 @@
+html {
+  font-size: 16px;
+  font-family: "Montserrat";
+}
+
+* {
+  margin: 0;
+  top: 0;
+}
+
+/* === NavBar === */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  position: fixed;
+  z-index: 0;
+  background-color: white;
+  width: 100%;
+}
+
+#logocolor {
+  color: #7e7e7e;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+li a {
+  text-decoration: none;
+  margin: auto 1rem;
+  color: black;
+}
+
+li {
+  display: inline-block;
+}
+
+/* === Banner === */
+.banner img {
+  padding: 2rem 2.5rem 2rem 1.5rem;
+  height: 40%;
+  width: 60%;
+}
+
+.banner {
+  background-color: #d8d8d8;
+  display: inline-flex;
+  align-content: space-between;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.bannerbox {
+  width: 30%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bannerbox h2 {
+  color: #3b2208;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.bannerbox p {
+  color: #3b2208;
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.bannerbox span {
+  text-align: center;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+  background-color: #707070;
+}
+
+.bannerbox span a {
+  text-decoration: none;
+  color: white;
+}
+/* === Information === */
+.information {
+  padding: 2rem 1.5rem;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.information img {
+  width: 100%;
+  height: auto;
+}
+
+.maininfo {
+  width: 60%;
+}
+
+.maininfo h3 {
+  color: #3b2208;
+  font-size: 2.5rem;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.maininfo p {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+
+/* === SideInfo === */
+.sideinformation {
+  width: 26.4375rem;
+  height: auto;
+  border-left: 1px solid #eaebec;
+}
+
+.box {
+  display: inline-flex;
+  padding: 1rem;
+  border-bottom: 1px solid #eaebec;
+}
+
+.box img {
+  width: 44%;
+  height: 44%;
+}
+
+.box h4, p, span {
+  margin: 0.5rem 0;
+}
+
+.boxtext {
+  width: 65%;
+  margin-left: 0.5rem;
+}
+
+.boxtext a {
+  text-decoration: none;
+  color: #4f9fef;
+}
+
+.sideinformation .box:nth-child(3n+0) {
+  background-color: #eaebec;
+}
+/* === Courses === */
+.courses {
+  background-color: #eaebec;
+  padding-top: 1rem;
+}
+
+h6 {
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+.boxies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.boxy {
+  height: auto;
+  width: 30%;
+  margin: 0.5rem 1rem;
+  background-color: white;
+}
+
+.boxy img {
+  height: 53.55%;
+  width: auto;
+}
+/* === Thesis === */
+.video {
+  width: 60%;
+  height: auto;
+  padding: 0 1rem 0 1.5rem;
+}
+
+.sidethesis {
+  padding: 1rem;
+  display: inline-flex;
+}
+
+.sidethesis img {
+  height: 40%;
+  width: 40%;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+.supsup {
+  width: 38%;
+}
+.boxzz {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.text {
+  padding: 1rem;
+}
+/* === Footer === */
+footer {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  border-top: 1px solid gray;
+}
+
+footer p {
+  padding-left: 1.5rem;
+}
+
+footer ul {
+  padding-right: 1.5rem;
+}
+
+footer li {
+  margin: 0 0.6rem;
+}
