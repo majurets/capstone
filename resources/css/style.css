@@ -9,7 +9,7 @@ html {
 }
 
 /* === NavBar === */
-nav {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,7 +81,7 @@ li {
   text-align: center;
   margin: 0.5rem 0;
   padding: 0.5rem 0;
-  background-color: #707070;
+  background-color: #4d4d4d;
 }
 
 .bannerbox span a {
@@ -119,13 +119,13 @@ li {
 .sideinformation {
   width: 26.4375rem;
   height: auto;
-  border-left: 1px solid #eaebec;
+  border-left: 1px solid #afb3b6;
 }
 
 .box {
   display: inline-flex;
   padding: 1rem;
-  border-bottom: 1px solid #eaebec;
+  border-bottom: 1px solid #afb3b6;
 }
 
 .box img {
@@ -152,7 +152,7 @@ li {
 }
 /* === Courses === */
 .courses {
-  background-color: #eaebec;
+  background-color: #e4e6e7;
   padding-top: 1rem;
 }
 
@@ -177,11 +177,26 @@ h6 {
   background-color: white;
 }
 
+.boxy h4 {
+  font-size: 1.2rem;
+  margin: 1rem 0 .5rem 1rem;
+}
+
+.boxy p {
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  font-size: 1.1rem;
+}
+
 .boxy img {
-  height: 53.55%;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 /* === Thesis === */
+.thesis {
+  margin-bottom: 2rem;
+}
+
 .video {
   width: 60%;
   height: auto;
@@ -212,6 +227,10 @@ video {
 
 .text {
   padding: 1rem;
+}
+
+#first {
+  background-color: #e4e6e7;
 }
 /* === Footer === */
 footer {
