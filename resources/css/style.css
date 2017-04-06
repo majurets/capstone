@@ -63,6 +63,10 @@ li {
     background-color: white;
     width: 100%;
   }
+
+  a i {
+    color: black;
+  }
 }
 
 /* === Banner === */
@@ -137,19 +141,17 @@ li {
 
   .bannerbox span {
     text-align: center;
-    margin: 0.5rem 1rem;
+    margin: 0.5rem 1rem 2rem 1rem;
     padding: 0.5rem 0;
     background-color: #4d4d4d;
   }
 
   .bannerbox h2 {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 2rem 1rem 2rem 1rem;
   }
 
   .bannerbox p {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 0rem 1rem 1.5rem 1rem;
   }
 }
 /* === Information === */
@@ -311,6 +313,16 @@ h6 {
 
   .boxy {
     width: 100%;
+    background-color: #d6dadb;
+  }
+
+  .courses {
+    background-color: #f9f9f9;
+  }
+
+  h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 }
 /* === Thesis === */
