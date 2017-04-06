@@ -42,14 +42,18 @@ li {
   display: inline-block;
 }
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 710px) {
   .mobile-header {
     display: none;
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 709px) {
   .laptop-header {
+    display: none;
+  }
+
+  .tablet-header {
     display: none;
   }
 
@@ -116,6 +120,21 @@ li {
   color: white;
 }
 
+@media only screen and (min-width: 481px) and (max-width: 709px) {
+  .bannerbox h2 {
+    font-size: 1.5rem;
+  }
+
+  .bannerbox p {
+    font-size: 1.1rem;
+  }
+
+  .bannerbox span {
+    margin-right: 1rem;
+  }
+}
+
+
 @media only screen and (max-width: 480px) {
   .banner img {
     height: auto;
@@ -181,7 +200,17 @@ li {
   font-size: 1.25rem;
 }
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 481px) and (max-width: 709px) {
+  .mobile-information {
+    display: none;
+  }
+
+  .maininfo {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 710px) {
   .mobile-information {
     display: none;
   }
@@ -239,6 +268,7 @@ li {
     flex-direction: column;
     margin-left: -1rem;
     margin-right: -1rem;
+    width: 100%;
   }
 
   .box img {
@@ -257,6 +287,35 @@ li {
 
   .boxtext {
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 710px) {
+  .box {
+    border: none;
+    flex-direction: column;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .box img {
+    width: 50%;
+    height: auto;
+  }
+
+  .sideinformation {
+    border: none;
+    width: 100%;
+  }
+
+  .sideinformation .box:nth-child(3n+0) {
+    background-color: white;
+  }
+
+  .boxtext {
+    width: 50%;
   }
 }
 /* === Courses === */
@@ -325,6 +384,24 @@ h6 {
     margin-bottom: 1rem;
   }
 }
+
+@media only screen and (min-width: 481px) and (max-width: 639px) {
+  .boxy {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 710px) {
+  .boxy {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 711px) and (max-width: 959px) {
+  .boxy {
+    width: 45%;
+  }
+}
 /* === Thesis === */
 .thesis {
   margin-bottom: 2rem;
@@ -366,6 +443,12 @@ video {
   background-color: #e4e6e7;
 }
 
+@media only screen and (min-width: 481px) and (max-width: 710px) {
+  .sidethesis img {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .supsup {
     display: none;
@@ -403,6 +486,12 @@ footer ul {
 
 footer li {
   margin: 0 0.6rem;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 573px) {
+  footer ul {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 480px) {
