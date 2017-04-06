@@ -9,7 +9,7 @@ html {
 }
 
 /* === NavBar === */
-header {
+.laptop-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,6 +40,29 @@ li a {
 
 li {
   display: inline-block;
+}
+
+@media only screen and (min-width: 481px) {
+  .mobile-header {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .laptop-header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    position: fixed;
+    z-index: 0;
+    background-color: white;
+    width: 100%;
+  }
 }
 
 /* === Banner === */
@@ -88,6 +111,47 @@ li {
   text-decoration: none;
   color: white;
 }
+
+@media only screen and (max-width: 480px) {
+  .banner img {
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  .banner {
+    background-color: #d8d8d8;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  .bannerbox {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .bannerbox span {
+    text-align: center;
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 0;
+    background-color: #4d4d4d;
+  }
+
+  .bannerbox h2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .bannerbox p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
 /* === Information === */
 .information {
   padding: 2rem 1.5rem;
@@ -113,6 +177,22 @@ li {
 .maininfo p {
   margin-bottom: 2rem;
   font-size: 1.25rem;
+}
+
+@media only screen and (min-width: 481px) {
+  .mobile-information {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .laptop-information {
+    display: none;
+  }
+
+  .maininfo {
+    display: none;
+  }
 }
 
 /* === SideInfo === */
@@ -149,6 +229,33 @@ li {
 
 .sideinformation .box:nth-child(3n+0) {
   background-color: #eaebec;
+}
+
+@media only screen and (max-width: 480px) {
+  .box {
+    border: none;
+    flex-direction: column;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
+  .box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .sideinformation {
+    border: none;
+    width: 100%;
+  }
+
+  .sideinformation .box:nth-child(3n+0) {
+    background-color: white;
+  }
+
+  .boxtext {
+    width: 100%;
+  }
 }
 /* === Courses === */
 .courses {
@@ -192,6 +299,20 @@ h6 {
   height: auto;
   width: 100%;
 }
+
+@media only screen and (max-width: 480px) {
+  .boxy img {
+    display: none;
+  }
+
+  .boxy p {
+    display: none;
+  }
+
+  .boxy {
+    width: 100%;
+  }
+}
 /* === Thesis === */
 .thesis {
   margin-bottom: 2rem;
@@ -232,6 +353,24 @@ video {
 #first {
   background-color: #e4e6e7;
 }
+
+@media only screen and (max-width: 480px) {
+  .supsup {
+    display: none;
+  }
+
+  .video {
+    width: 100%;
+  }
+
+  .video h4 {
+    display: none;
+  }
+
+  .video p {
+    display: none;
+  }
+}
 /* === Footer === */
 footer {
   display: inline-flex;
@@ -252,4 +391,14 @@ footer ul {
 
 footer li {
   margin: 0 0.6rem;
+}
+
+@media only screen and (max-width: 480px) {
+  footer ul {
+    display: none;
+  }
+
+  footer p {
+
+  }
 }
